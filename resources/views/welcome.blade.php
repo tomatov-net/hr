@@ -78,16 +78,14 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{ route('weather.index') }}">Температура</a>
+                    <a href="{{ route('orders.index') }}">Заказы</a>
+                    <a href="{{ route('advanced.products.index') }}">Продукты (дополнительно)</a>
+                    <a href="{{ route('advanced.orders.index') }}">Заказы (дополнительно)</a>
+                    {{--<a href="https://github.com/laravel/laravel">GitHub</a>--}}
                 </div>
             </div>
         </div>

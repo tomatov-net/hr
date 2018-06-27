@@ -13,6 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::post('change-price', 'ProductController@change_price');
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
